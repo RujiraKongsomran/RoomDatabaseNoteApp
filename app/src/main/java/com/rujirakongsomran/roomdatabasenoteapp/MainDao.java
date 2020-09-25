@@ -22,7 +22,7 @@ public interface MainDao {
 
     // Delete all query
     @Delete
-    void reset(List<MainDao> mainData);
+    void reset(List<MainData> mainData);
 
     // Update query
     @Query("UPDATE table_note SET text = :sText WHERE ID = :sId")
