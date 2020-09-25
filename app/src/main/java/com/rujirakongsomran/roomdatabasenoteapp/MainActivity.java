@@ -1,10 +1,10 @@
 package com.rujirakongsomran.roomdatabasenoteapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.rujirakongsomran.roomdatabasenoteapp.databinding.ActivityMainBinding;
 
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     List<MainData> dataList = new ArrayList<>();
     LinearLayoutManager linearLayoutManager;
     RoomDB database;
-
+    MainAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

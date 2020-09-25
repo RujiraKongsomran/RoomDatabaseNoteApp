@@ -1,7 +1,5 @@
 package com.rujirakongsomran.roomdatabasenoteapp;
 
-import android.icu.text.Replaceable;
-
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
