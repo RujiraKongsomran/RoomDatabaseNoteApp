@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ornach.nobobutton.NoboButton;
 import com.rujirakongsomran.roomdatabasenoteapp.databinding.ListRowMainBinding;
 
 import java.util.List;
@@ -79,7 +79,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
                 // Initialize and assign variable
                 final EditText etText = dialog.findViewById(R.id.etText);
-                Button btnUpdate = dialog.findViewById(R.id.btnUpdate);
+                NoboButton btnUpdate = new NoboButton(context);
+                btnUpdate = dialog.findViewById(R.id.btnUpdate);
 
                 // Set text on edit text
                 etText.setText(sText);

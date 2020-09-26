@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MainAdapter(dataList, MainActivity.this);
         binding.recyclerView.setAdapter(adapter);
 
+
         binding.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

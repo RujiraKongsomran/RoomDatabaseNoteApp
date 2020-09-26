@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -12,7 +13,9 @@
         android:id="@+id/etMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/nunito_semibold"
         android:hint="Enter text"
         android:padding="12dp" />
 
@@ -22,19 +25,38 @@
         android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
-        <Button
+
+        <com.ornach.nobobutton.NoboButton
             android:id="@+id/btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
-            android:text="Add" />
+            android:padding="10dp"
+            app:nb_backgroundColor="#ff4081"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#ba2d65"
+            app:nb_fontIcon="&#xf055;"
+            app:nb_radius="5dp"
+            app:nb_text="Add"
+            app:nb_textColor="#FFF" />
 
-        <Button
+        <com.ornach.nobobutton.NoboButton
             android:id="@+id/btnReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
-            android:text="Reset" />
+            android:padding="10dp"
+            app:nb_backgroundColor="#ff4081"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#ba2d65"
+            app:nb_fontIcon="&#xf01e;"
+            app:nb_radius="5dp"
+            app:nb_text="Reset"
+            app:nb_textColor="#FFF" />
 
     </LinearLayout>
 
@@ -42,7 +64,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         tools:listitem="@layout/list_row_main" />
 
 </LinearLayout>
